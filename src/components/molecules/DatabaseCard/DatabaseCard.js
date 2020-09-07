@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Button } from 'components/atoms/Button/Button';
 
 const Wrapper = styled.div`
   display: none;

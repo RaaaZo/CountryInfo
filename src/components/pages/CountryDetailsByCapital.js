@@ -77,7 +77,7 @@ const CountryDetailsByCapital = () => {
 
   useEffect(() => {
     fetchData(`capital/${capitalName}`);
-  }, []);
+  }, [capitalName]);
 
   if (error) {
     return <ErrorWrapper>{error.message}</ErrorWrapper>;

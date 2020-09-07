@@ -77,7 +77,7 @@ const CountryDetailsByName = () => {
 
   useEffect(() => {
     fetchData(`name/${countryName}`);
-  }, []);
+  }, [countryName]);
 
   const handleDispatch = (payload) => {
     dispatch({ type: 'isOpen', payload });

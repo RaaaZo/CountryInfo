@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 60px;
 `;
 
 const StyledHomeSvg = styled(HomeSvg)`

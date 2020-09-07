@@ -76,31 +76,52 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
+const MenuDrawer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transform: translateX(200%);
+  transition: transform 0.6s 0.1s ease-in-out;
+
+  ${({ isModalMenuOpen }) =>
+    isModalMenuOpen &&
+    css`
+      transform: translateX(0);
+    `}
+`;
+
 const MobileModalMenu = ({ handleModalMenu, isModalMenuOpen }) => {
   return (
-    <NavModal isModalMenuOpen={isModalMenuOpen}>
-      <StyledNavLink exact onClick={handleModalMenu} activeClassName="selected" to="/">
-        Home
-      </StyledNavLink>
+    <>
+      <MenuDrawer onClick={handleModalMenu} isModalMenuOpen={isModalMenuOpen} />
+      <NavModal isModalMenuOpen={isModalMenuOpen}>
+        <StyledNavLink exact onClick={handleModalMenu} activeClassName="selected" to="/">
+          Home
+        </StyledNavLink>
 
-      <StyledNavLink
-        exact
-        onClick={handleModalMenu}
-        activeClassName="selected"
-        to="/search/byCountry"
-      >
-        by Country
-      </StyledNavLink>
+        <StyledNavLink
+          exact
+          onClick={handleModalMenu}
+          activeClassName="selected"
+          to="/search/byCountry"
+        >
+          by Country
+        </StyledNavLink>
 
-      <StyledNavLink
-        exact
-        onClick={handleModalMenu}
-        activeClassName="selected"
-        to="/search/byCapital"
-      >
-        by Capital
-      </StyledNavLink>
-    </NavModal>
+        <StyledNavLink
+          exact
+          onClick={handleModalMenu}
+          activeClassName="selected"
+          to="/search/byCapital"
+        >
+          by Capital
+        </StyledNavLink>
+      </NavModal>
+    </>
   );
 };
 

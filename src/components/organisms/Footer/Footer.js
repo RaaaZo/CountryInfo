@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -12,6 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledLink = styled.a`
+  display: block;
   margin: 0 auto;
   color: black;
   font-weight: 700;
@@ -20,11 +24,13 @@ const StyledLink = styled.a`
 
 const Footer = () => {
   return (
-    <Wrapper>
-      <StyledLink href="https://github.com/RaaaZo" target="_blank">
-        Mateusz Koprowicz©
-      </StyledLink>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <StyledLink href="https://github.com/RaaaZo" target="_blank">
+          Mateusz Koprowicz©
+        </StyledLink>
+      </Wrapper>
+    </>
   );
 };
 

@@ -19,6 +19,7 @@ const StyledHeader = styled(Header)`
 const StyledButton = styled(Button)`
   display: block;
   margin: 10px auto;
+  margin-bottom: 60px;
 `;
 
 const StyledDetailsSvg = styled(CountryDetailsSvg)`

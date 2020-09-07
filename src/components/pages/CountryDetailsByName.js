@@ -19,6 +19,12 @@ const StyledHeader = styled(Header)`
 const StyledButton = styled(Button)`
   display: block;
   margin: 10px auto;
+  margin-bottom: 60px;
+  font-size: ${({ theme }) => theme.fontSize.l};
+
+  @media (min-width: 1024px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+  }
 `;
 
 const StyledDetailsSvg = styled(CountryDetailsSvg)`

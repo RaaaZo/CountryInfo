@@ -34,7 +34,7 @@ button {
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background-color: #25B7E5;
     line-height: 1.5;
     overflow-x: hidden;

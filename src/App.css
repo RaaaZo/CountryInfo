@@ -4,5 +4,6 @@
 
 .switch-wrapper > div {
   position: absolute;
+  margin-bottom: 60px;
   width: 100%;
 }

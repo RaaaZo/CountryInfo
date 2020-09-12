@@ -44,6 +44,7 @@ const InnerWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
 
   @media (min-width: 768px) {
     margin: 40px auto;
@@ -102,8 +103,9 @@ const SearchByCountry = () => {
       </StyledHeader>
 
       <form
-        onSubmit={() => {
-          history.push(`/byCountry/${value}`);
+        onSubmit={(e) => {
+          e.preventDefault();
+          history.push(`/countryDetails/${value}`);
         }}
       >
         <InnerWrapper>
@@ -124,7 +126,7 @@ const SearchByCountry = () => {
       <InnerWrapper selectedOnes>
         {DUMMY_DATA.map((item) => (
           <Fragment key={item.id}>
-            <StyledButton onClick={() => history.push(`/byCountry/${item.name}`)}>
+            <StyledButton onClick={() => history.push(`/countryDetails/${item.name}`)}>
               {item.name}
             </StyledButton>
           </Fragment>

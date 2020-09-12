@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchByCountry from 'components/pages/SearchByCountry';
+import SearchByCountry from 'pages/SearchByCountry';
 import NavigationTemplate from 'template/NavigationTemplate';
 
 export default {

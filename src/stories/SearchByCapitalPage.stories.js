@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchByCapital from 'components/pages/SearchByCapital';
+import SearchByCapital from 'pages/SearchByCapital';
 import NavigationTemplate from 'template/NavigationTemplate';
 
 export default {

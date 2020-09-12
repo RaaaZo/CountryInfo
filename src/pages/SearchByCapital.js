@@ -24,7 +24,7 @@ const DUMMY_DATA = [
   },
   {
     id: 4,
-    name: 'Lisbona',
+    name: 'Lisbon',
   },
   {
     id: 5,
@@ -44,6 +44,7 @@ const InnerWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
 
   @media (min-width: 768px) {
     margin: 40px auto;
@@ -102,15 +103,16 @@ const SearchByCapital = () => {
       </StyledHeader>
 
       <form
-        onSubmit={() => {
-          history.push(`/byCapital/${inputValue}`);
+        onSubmit={(e) => {
+          e.preventDefault();
+          history.push(`/countryDetails/${inputValue}`);
         }}
       >
         <InnerWrapper>
-          <Label htmlFor="countryName">Capital name</Label>
+          <Label htmlFor="capitalName">Capital name</Label>
           <StyledInput
-            id="countryName"
-            name="countryName"
+            id="capitalName"
+            name="capitalName"
             placeholder="etc. Warsaw"
             onChange={handleInputValue}
             value={inputValue}
@@ -124,7 +126,7 @@ const SearchByCapital = () => {
       <InnerWrapper selectedOnes>
         {DUMMY_DATA.map((item) => (
           <Fragment key={item.id}>
-            <StyledButton onClick={() => history.push(`/byCapital/${item.name}`)}>
+            <StyledButton onClick={() => history.push(`/countryDetails/${item.name}`)}>
               {item.name}
             </StyledButton>
           </Fragment>

@@ -1,5 +1,5 @@
 import React from 'react';
-import CountryDetails from 'components/pages/CountryDetailsByName';
+import CountryDetails from 'pages/CountryDetailsByName';
 import NavigationTemplate from 'template/NavigationTemplate';
 
 export default {

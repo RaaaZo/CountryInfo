@@ -5,10 +5,10 @@ import HomeAnimation from 'components/atoms/HomeAnimation/HomeAnimation';
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <HomeWelcome />
       <HomeAnimation />
-    </div>
+    </>
   );
 };
 

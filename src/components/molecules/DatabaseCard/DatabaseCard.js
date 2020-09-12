@@ -24,8 +24,12 @@ const Wrapper = styled.div`
     width: 50%;
   }
 
-  @media (min-width: 1440px) {
-    width: 40%;
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1360px) {
+    width: 60%;
   }
 
   ${({ isCardOpen }) =>

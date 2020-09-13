@@ -1,5 +1,8 @@
 ## Description
-Page where You can check main informations about each Country on the globe (capital name, population, region, etc.) with country name or capital name (Database accepts only English names). This project is written in React used context and libraries like Axios, Gsap, Styled Components, .
+Page where You can check main informations about each Country on the globe (capital name, population, region, etc.) with country name or capital name (Database accepts only English names). This project is written in React used context and libraries like Axios, Gsap, Styled Components.
+
+## Live
+https://country-info-551b0.web.app/
 
 ## Available Scripts
 
